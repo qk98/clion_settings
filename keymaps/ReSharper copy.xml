@@ -1,0 +1,52 @@
+<keymap version="1" name="ReSharper copy" parent="ReSharper">
+  <action id="$Cut">
+    <keyboard-shortcut first-keystroke="ctrl x" />
+  </action>
+  <action id="Back">
+    <keyboard-shortcut first-keystroke="ctrl alt left" />
+    <mouse-shortcut keystroke="button4" />
+    <keyboard-shortcut first-keystroke="alt minus" />
+  </action>
+  <action id="CMake.ReloadCMakeProject">
+    <keyboard-shortcut first-keystroke="f6" />
+  </action>
+  <action id="ChangesView.Move" />
+  <action id="Console.Execute.Multiline" />
+  <action id="ContextHelp" />
+  <action id="EditorBackSpace">
+    <keyboard-shortcut first-keystroke="back_space" />
+  </action>
+  <action id="EditorChooseLookupItemCompleteStatement" />
+  <action id="EditorCompleteStatement" />
+  <action id="EditorDeleteToLineEnd">
+    <keyboard-shortcut first-keystroke="shift delete" />
+  </action>
+  <action id="EditorDeleteToLineStart">
+    <keyboard-shortcut first-keystroke="shift back_space" />
+  </action>
+  <action id="EditorSplitLine" />
+  <action id="EditorStartNewLine">
+    <keyboard-shortcut first-keystroke="ctrl enter" />
+  </action>
+  <action id="EditorStartNewLineBefore">
+    <keyboard-shortcut first-keystroke="shift ctrl enter" />
+  </action>
+  <action id="Forward">
+    <keyboard-shortcut first-keystroke="ctrl alt right" />
+    <mouse-shortcut keystroke="button5" />
+    <keyboard-shortcut first-keystroke="alt equals" />
+  </action>
+  <action id="QuickActionPopup">
+    <keyboard-shortcut first-keystroke="shift ctrl q" />
+  </action>
+  <action id="ReformatCode">
+    <keyboard-shortcut first-keystroke="alt f8" />
+    <keyboard-shortcut first-keystroke="ctrl alt f" />
+    <keyboard-shortcut first-keystroke="ctrl alt enter" />
+  </action>
+  <action id="SmartSearchAction">
+    <keyboard-shortcut first-keystroke="f1" />
+  </action>
+  <action id="Vcs.MoveChangedLinesToChangelist" />
+  <action id="ViewSource" />
+</keymap>

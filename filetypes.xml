@@ -1,0 +1,11 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping ext="vs" type="GLSL shader file" />
+      <mapping ext="fs" type="GLSL shader file" />
+      <mapping ext="cu" type="ObjectiveC" />
+      <mapping ext="cuh" type="ObjectiveC" />
+      <mapping pattern="markdown" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>

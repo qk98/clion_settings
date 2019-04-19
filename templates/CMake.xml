@@ -1,0 +1,36 @@
+<templateSet group="CMake">
+  <template name="CUDA" value="# see https://cmake.org/cmake/help/latest/module/FindCUDA.html&#10;find_package(CUDA REQUIRED)&#10;&#10;include_directories(${CUDA_INCLUDE_DIRS})&#10;&#10;set(CMAKE_CUDA_FLAGS &quot;${CMAKE_CUDA_FLAGS} -std=c++11 -gencode arch=compute_61,code=sm_61&quot;)&#10;#    -DNDEBUG&#10;&#10;if (${CMAKE_BUILD_TYPE} STREQUAL &quot;Debug&quot;)&#10;  set(CMAKE_CUDA_FLAGS &quot;${CMAKE_CUDA_FLAGS} -G&quot;)&#10;elseif(${CMAKE_BUILD_TYPE} STREQUAL &quot;Release&quot;)&#10;  set(CMAKE_CUDA_FLAGS &quot;${CMAKE_CUDA_FLAGS} -DNDEBUG -lineinfo&quot;)&#10;endif ()&#10;message(&quot;CMAKE_CUDA_FLAGS: ${CMAKE_CUDA_FLAGS}&quot;)" description="Add CUDA headers" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CMAKE_COMMAND_CONTEXT" value="true" />
+    </context>
+  </template>
+  <template name="general_library" value="find_package(CUDA REQUIRED)&#10;&#10;include_directories(&#10;    ${CUDA_INCLUDE_DIRS}&#10;    /opt/opencv/include&#10;    /opt/my_library/include&#10;)&#10;link_directories(&#10;    /opt/opencv/lib&#10;    /opt/my_library/lib&#10;)&#10;&#10;set(CUDA_NVCC_FLAGS&#10;        -std=c++11&#10;        -gencode arch=compute_61,code=sm_61&#10;        -DNDEBUG&#10;        -lineinfo&#10;        )&#10;set(CUDA_SEPARABLE_COMPILATION on)" description="Add general_library headers" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CMAKE_COMMAND_CONTEXT" value="true" />
+    </context>
+  </template>
+  <template name="add_target_link_libraries" value="target_link_libraries($TARGET$&#10;        my_library&#10;        opencv_world&#10;        ${CUDA_LIBRARIES}&#10;        ${CUDA_cudadevrt_LIBRARY}&#10;        ${CUDA_cusparse_LIBRARY}&#10;)" description="add general libraries to target" toReformat="true" toShortenFQNames="true">
+    <variable name="TARGET" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CMAKE_COMMAND_CONTEXT" value="true" />
+    </context>
+  </template>
+  <template name="create_cuda_project" value="cmake_minimum_required(VERSION 3.9)&#10;project($TARGET$)&#10;&#10;find_package(CUDA REQUIRED)&#10;&#10;include_directories(&#10;    ${CUDA_INCLUDE_DIRS}&#10;    /opt/opencv/include&#10;    /usr/local/cuda/samples/common/inc&#10;)&#10;link_directories(&#10;    /opt/opencv/lib&#10;)&#10;&#10;set(CMAKE_CUDA_FLAGS &quot;${CMAKE_CUDA_FLAGS} -std=c++11 -gencode arch=compute_61,code=sm_61&quot;)&#10;#    -DNDEBUG&#10;&#10;if (${CMAKE_BUILD_TYPE} STREQUAL &quot;Debug&quot;)&#10;  set(CMAKE_CUDA_FLAGS &quot;${CMAKE_CUDA_FLAGS} -G&quot;)&#10;elseif(${CMAKE_BUILD_TYPE} STREQUAL &quot;Release&quot;)&#10;  set(CMAKE_CUDA_FLAGS &quot;${CMAKE_CUDA_FLAGS} -DNDEBUG -lineinfo&quot;)&#10;endif ()&#10;message(&quot;CMAKE_CUDA_FLAGS: ${CMAKE_CUDA_FLAGS}&quot;)&#10;&#10;set(CMAKE_CXX_STANDARD 11)&#10;&#10;set(INCLUDE_FILES&#10;        &#10;        )&#10;set(SOURCE_FILES&#10;        main.cpp&#10;        &#10;        )&#10;CUDA_ADD_EXECUTABLE($TARGET$ ${SOURCE_FILES} ${INCLUDE_FILES})&#10;target_link_libraries($TARGET$&#10;    opencv_world&#10;    ${CUDA_LIBRARIES}&#10;    ${CUDA_cudadevrt_LIBRARY}&#10;    ${CUDA_cusparse_LIBRARY}&#10;    )" description="generate cuda project cmakelist" toReformat="true" toShortenFQNames="true">
+    <variable name="TARGET" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CMAKE_COMMAND_CONTEXT" value="true" />
+    </context>
+  </template>
+  <template name="create_opencv_project" value="cmake_minimum_required(VERSION 3.9)&#10;project($TARGET$)&#10;&#10;include_directories(&#10;    /opt/opencv/include&#10;)&#10;link_directories(&#10;    /opt/opencv/lib&#10;)&#10;&#10;set(CMAKE_CXX_STANDARD 11)&#10;&#10;set(INCLUDE_FILES&#10;        &#10;        )&#10;set(SOURCE_FILES&#10;        main.cpp&#10;        &#10;        )&#10;add_executable($TARGET$ ${SOURCE_FILES} ${INCLUDE_FILES})&#10;target_link_libraries($TARGET$&#10;    opencv_world&#10;    )" description="generate cuda project cmakelist" toReformat="true" toShortenFQNames="true">
+    <variable name="TARGET" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CMAKE_COMMAND_CONTEXT" value="true" />
+    </context>
+  </template>
+  <template name="create_cuda_cmake" value="cmake_minimum_required(VERSION 3.9)&#10;project($TARGET$ CUDA CXX)&#10;&#10;include_directories(&#10;    /opt/opencv/include&#10;    /usr/local/cuda/samples/common/inc&#10;    /usr/local/cuda/include&#10;)&#10;link_directories(&#10;    /opt/opencv/lib&#10;)&#10;&#10;set(CMAKE_CUDA_FLAGS &quot;${CMAKE_CUDA_FLAGS} -std=c++11 -gencode arch=compute_61,code=sm_61&quot;)&#10;#    -DNDEBUG&#10;&#10;if (${CMAKE_BUILD_TYPE} STREQUAL &quot;Debug&quot;)&#10;  set(CMAKE_CUDA_FLAGS &quot;${CMAKE_CUDA_FLAGS} -G&quot;)&#10;elseif(${CMAKE_BUILD_TYPE} STREQUAL &quot;Release&quot;)&#10;  set(CMAKE_CUDA_FLAGS &quot;${CMAKE_CUDA_FLAGS} -DNDEBUG -lineinfo&quot;)&#10;endif ()&#10;message(&quot;CMAKE_CUDA_FLAGS: ${CMAKE_CUDA_FLAGS}&quot;)&#10;    &#10;set(CMAKE_CXX_STANDARD 11)&#10;&#10;set(INCLUDE_FILES&#10;        &#10;        )&#10;set(SOURCE_FILES&#10;        main.cpp&#10;        &#10;        )&#10;add_executable($TARGET$ ${SOURCE_FILES} ${INCLUDE_FILES})&#10;target_link_libraries($TARGET$&#10;    opencv_world&#10;    )" description="generate cuda project cmakelist" toReformat="true" toShortenFQNames="true">
+    <variable name="TARGET" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CMAKE_COMMAND_CONTEXT" value="true" />
+    </context>
+  </template>
+</templateSet>
