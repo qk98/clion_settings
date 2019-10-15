@@ -4,14 +4,13 @@
       <list>
         <Profile>
           <option name="defaultProfile" value="true" />
-          <option name="enableMaxLengthGrepLimit" value="false" />
-          <option name="enableMaxLengthLimit" value="false" />
           <option name="grepExpressionGroups">
             <list>
               <GrepExpressionGroup>
                 <option name="grepExpressionItems">
                   <list>
                     <GrepExpressionItem>
+                      <option name="enabled" value="false" />
                       <option name="grepExpression" value=".*FATAL.*" />
                       <option name="style">
                         <GrepStyle>
@@ -25,6 +24,7 @@
                       </option>
                     </GrepExpressionItem>
                     <GrepExpressionItem>
+                      <option name="enabled" value="false" />
                       <option name="grepExpression" value=".*ERROR.*" />
                       <option name="style">
                         <GrepStyle>
@@ -39,6 +39,7 @@
                     </GrepExpressionItem>
                     <GrepExpressionItem>
                       <option name="caseInsensitive" value="true" />
+                      <option name="enabled" value="false" />
                       <option name="grepExpression" value=".*WARN.*" />
                       <option name="highlightOnlyMatchingText" value="true" />
                       <option name="style">
@@ -62,6 +63,7 @@
                       <option name="grepExpression" value=".*INFO.*" />
                     </GrepExpressionItem>
                     <GrepExpressionItem>
+                      <option name="enabled" value="false" />
                       <option name="grepExpression" value=".*DEBUG.*" />
                       <option name="style">
                         <GrepStyle>
@@ -75,6 +77,7 @@
                       </option>
                     </GrepExpressionItem>
                     <GrepExpressionItem>
+                      <option name="enabled" value="false" />
                       <option name="grepExpression" value=".*TRACE.*" />
                       <option name="style">
                         <GrepStyle>
@@ -128,7 +131,7 @@
                     </GrepExpressionItem>
                     <GrepExpressionItem>
                       <option name="caseInsensitive" value="true" />
-                      <option name="grepExpression" value="undefined" />
+                      <option name="grepExpression" value="fatal" />
                       <option name="highlightOnlyMatchingText" value="true" />
                       <option name="style">
                         <GrepStyle>
@@ -139,7 +142,7 @@
                           </option>
                           <option name="foregroundColor">
                             <GrepColor>
-                              <option name="color" value="-43427" />
+                              <option name="color" value="-65536" />
                               <option name="enabled" value="true" />
                             </GrepColor>
                           </option>
@@ -174,6 +177,8 @@
               </GrepExpressionGroup>
             </list>
           </option>
+          <option name="maxLengthToGrep" value="2000" />
+          <option name="maxLengthToMatch" value="1200" />
           <option name="name" value="default" />
         </Profile>
       </list>
