@@ -4,6 +4,8 @@
       <list>
         <Profile>
           <option name="defaultProfile" value="true" />
+          <option name="enableMaxLengthGrepLimit" value="false" />
+          <option name="enableMaxLengthLimit" value="false" />
           <option name="grepExpressionGroups">
             <list>
               <GrepExpressionGroup>
@@ -126,7 +128,7 @@
                     </GrepExpressionItem>
                     <GrepExpressionItem>
                       <option name="caseInsensitive" value="true" />
-                      <option name="grepExpression" value="undefined reference" />
+                      <option name="grepExpression" value="undefined" />
                       <option name="highlightOnlyMatchingText" value="true" />
                       <option name="style">
                         <GrepStyle>
