@@ -1,6 +1,6 @@
 <application>
   <component name="VimSettings">
-    <state version="4" enabled="false" />
+    <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
       <file name="$USER_HOME$/workspace/InnorealReality3D/algorithms/view_synthesis_data_generation/CMakeLists.txt" timestamp="1571817057698">
@@ -16,6 +16,12 @@
         <mark key="]" line="250" column="422" />
         <mark key="." line="250" column="409" />
         <mark key="^" line="16" column="35" />
+      </file>
+      <file name="$USER_HOME$/workspace/untitled7/CMakeLists.txt" timestamp="1571821638702">
+        <mark key="[" line="5" column="0" />
+        <mark key="]" line="5" column="0" />
+        <mark key="^" line="6" column="1" />
+        <mark key="." line="5" column="0" />
       </file>
       <file name="$USER_HOME$/workspace/InnorealReality3D/InnoRealTools/cmake/innoreal_toolchain.cmake" timestamp="1571819738698">
         <mark key="'" line="884" column="8" />
@@ -45,10 +51,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>Qt5_LIBRARIES</text>
+        <text encoding="base64">IyA=</text>
       </register>
       <register name="-" type="4">
-        <text>opencv_core</text>
+        <text encoding="base64">IyA=</text>
       </register>
       <register name="/" type="4">
         <text>opencv</text>
@@ -57,13 +63,13 @@
         <text>Qt5_LIBRARIES</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAjIGFkZF9leGUoIiR7REVNT19TUkNfRklMRVN9OyR7TElCX1NSQ19GSUxFU307e0xJQl9JTkNfRklMRVN9IiAiLi9pbmNsdWRlIiAic2FtcGxlX29mZnNjcmVlbl9kZXB0aCIgIiR7T3BlbkNWX0xJQlN9OyR7UXQ1X0xJQlJBUklFU30iICIke09QRU5DVl9ESVJ9L2xpYjske1F0NV9MSUJSQVJZX0RJUn0iKQo=</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgc2FtcGxlL3NhbXBsZV9vZmZzY3JlZW5fZGVwdGguY3BwCg==</text>
+        <text encoding="base64">ICAjIGFkZF9leGUoIiR7REVNT19TUkNfRklMRVN9OyR7TElCX1NSQ19GSUxFU307e0xJQl9JTkNfRklMRVN9IiAiLi9pbmNsdWRlIiAic2FtcGxlX29mZnNjcmVlbl9kZXB0aCIgIiR7T3BlbkNWX0xJQlN9OyR7UXQ1X0xJQlJBUklFU30iICIke09QRU5DVl9ESVJ9L2xpYjske1F0NV9MSUJSQVJZX0RJUn0iKQo=</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgc2FtcGxlL3NhbXBsZV9vZmZzY3JlZW5fZGVwdGguY3BwCg==</text>
       </register>
       <register name="4" type="2">
         <text encoding="base64">Cg==</text>
@@ -75,13 +81,13 @@
         <text encoding="base64">Cg==</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICBpbmNsdWRlKC4uLy4uL0lubm9SZWFsVG9vbHMvY21ha2UvaW5ub3JlYWxfcXQuY21ha2UpCg==</text>
-      </register>
-      <register name="8" type="2">
         <text encoding="base64">Cg==</text>
       </register>
+      <register name="8" type="2">
+        <text encoding="base64">ICBpbmNsdWRlKC4uLy4uL0lubm9SZWFsVG9vbHMvY21ha2UvaW5ub3JlYWxfcXQuY21ha2UpCg==</text>
+      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgKQo=</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
