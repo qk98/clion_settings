@@ -1,6 +1,6 @@
 <application>
   <component name="VimSettings">
-    <state version="4" enabled="true" />
+    <state version="4" enabled="false" />
     <globalmarks />
     <filemarks>
       <file name="$USER_HOME$/workspace/InnorealReality3D/algorithms/view_synthesis_data_generation/CMakeLists.txt" timestamp="1571817057698">
@@ -30,11 +30,12 @@
         <mark key="." line="885" column="34" />
         <mark key="^" line="885" column="34" />
       </file>
-      <file name="$USER_HOME$/workspace/InnorealReality3D/thirdparty/thirdparty_config.cmake" timestamp="1571819824149" />
+      <file name="$USER_HOME$/workspace/InnorealReality3D/thirdparty/thirdparty_config.cmake" timestamp="1571822877427" />
       <file name="$USER_HOME$/workspace/InnorealReality3D/InnoRealTools/cmake/innoreal_qt.cmake" timestamp="1571820211486">
         <mark key="[" line="112" column="33" />
         <mark key="]" line="112" column="45" />
       </file>
+      <file name="$USER_HOME$/workspace/InnorealReality3D/InnoRealTools/cmake/innorealtools_config.cmake" timestamp="1571822416446" />
     </filemarks>
     <jumps>
       <jump line="27" column="70" filename="$USER_HOME$/workspace/InnorealReality3D/algorithms/view_synthesis_data_generation/CMakeLists.txt" />
