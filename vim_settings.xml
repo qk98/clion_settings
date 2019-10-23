@@ -1,0 +1,90 @@
+<application>
+  <component name="VimSettings">
+    <state version="4" enabled="false" />
+    <globalmarks />
+    <filemarks>
+      <file name="$USER_HOME$/workspace/InnorealReality3D/algorithms/view_synthesis_data_generation/CMakeLists.txt" timestamp="1571817057698">
+        <mark key="'" line="57" column="0" />
+        <mark key="[" line="32" column="125" />
+        <mark key="]" line="32" column="126" />
+        <mark key="^" line="32" column="105" />
+        <mark key="." line="32" column="126" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="27" column="70" filename="$USER_HOME$/workspace/InnorealReality3D/algorithms/view_synthesis_data_generation/CMakeLists.txt" />
+      <jump line="25" column="13" filename="$USER_HOME$/workspace/InnorealReality3D/algorithms/view_synthesis_data_generation/CMakeLists.txt" />
+      <jump line="35" column="14" filename="$USER_HOME$/workspace/InnorealReality3D/algorithms/view_synthesis_data_generation/CMakeLists.txt" />
+      <jump line="36" column="0" filename="$USER_HOME$/workspace/InnorealReality3D/algorithms/view_synthesis_data_generation/CMakeLists.txt" />
+    </jumps>
+    <registers>
+      <register name="&quot;" type="4">
+        <text encoding="base64">IyA=</text>
+      </register>
+      <register name="-" type="4">
+        <text encoding="base64">IyA=</text>
+      </register>
+      <register name="/" type="4">
+        <text encoding="base64">XDxpbm5vcmVhbF92aWV3X3N5bmNfZGF0YVw+</text>
+      </register>
+      <register name="0" type="4">
+        <text encoding="base64">REVNT19TUkNfRklMRVMKICAgICAg</text>
+      </register>
+      <register name="1" type="2">
+        <text encoding="base64">ICAjIGFkZF9leGUoIiR7REVNT19TUkNfRklMRVN9OyR7TElCX1NSQ19GSUxFU307e0xJQl9JTkNfRklMRVN9IiAiLi9pbmNsdWRlIiAic2FtcGxlX29mZnNjcmVlbl9kZXB0aCIgIiR7T3BlbkNWX0xJQlN9OyR7UXQ1X0xJQlJBUklFU30iICIke09QRU5DVl9ESVJ9L2xpYjske1F0NV9MSUJSQVJZX0RJUn0iKQo=</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgc2FtcGxlL3NhbXBsZV9vZmZzY3JlZW5fZGVwdGguY3BwCg==</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="7" type="2">
+        <text encoding="base64">ICBpbmNsdWRlKC4uLy4uL0lubm9SZWFsVG9vbHMvY21ha2UvaW5ub3JlYWxfcXQuY21ha2UpCg==</text>
+      </register>
+      <register name="8" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgICAgKQo=</text>
+      </register>
+      <register name=":" type="4">
+        <text>w</text>
+      </register>
+    </registers>
+    <search>
+      <last-search encoding="base64">XDxpbm5vcmVhbF92aWV3X3N5bmNfZGF0YVw+</last-search>
+      <last-offset />
+      <last-pattern encoding="base64">XDxpbm5vcmVhbF92aWV3X3N5bmNfZGF0YVw+</last-pattern>
+      <last-dir>1</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history>
+      <history-search>
+        <entry encoding="base64">XDxpbm5vcmVhbF92aWV3X3N5bmNfZGF0YVw+</entry>
+      </history-search>
+      <history-cmd>
+        <entry>1</entry>
+        <entry>37,68y</entry>
+        <entry>w</entry>
+      </history-cmd>
+    </history>
+    <shortcut-conflicts>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed C</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed A</text>
+      </shortcut-conflict>
+    </shortcut-conflicts>
+  </component>
+</application>
